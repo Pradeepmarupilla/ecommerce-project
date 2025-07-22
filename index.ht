@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Use the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto min-h-screen flex flex-col">
+        <!-- Header Section -->
+        <header class="bg-white shadow-md w-full px-6 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-gray-800">E-Commerce</h1>
+            <div class="flex items-center space-x-4">
+                <button class="px-4 py-2 text-gray-700 font-semibold border border-gray-300 rounded-lg hover:bg-gray-100 transition duration-300">Login</button>
+                <button class="px-4 py-2 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-900 transition duration-300">Sign Up</button>
+            </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <div class="flex flex-1 flex-col md:flex-row">
+            <!-- Left Sidebar Navigation -->
+            <aside class="w-full md:w-1/4 bg-gray-800 text-white p-6">
+                <nav>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="block px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 transition duration-300">About Us</a></li>
+                        <li><a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-700 transition duration-300">Computers</a></li>
+                        <li><a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-700 transition duration-300">Mobiles</a></li>
+                        <li><a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-700 transition duration-300">Laptops</a></li>
+                        <li><a href="#" class="block px-4 py-2 rounded-lg hover:bg-gray-700 transition duration-300">Pendrives</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Right Content Area -->
+            <main class="w-full md:w-3/4 p-8">
+                <!-- Electronic Store Introduction -->
+                <section class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">About Our Electronic Store</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">
+                        Welcome to our E-Commerce platform, your one-stop shop for the latest and greatest in electronics! We specialize in high-quality products, including computers, mobiles, laptops, and accessories.
+                    </p>
+                </section>
+
+                <!-- Product Categories Grid -->
+                <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Computers Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="A modern desktop computer" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x300/E2E8F0/4A5568?text=Image+Error';">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold mb-2">Computers</h3>
+                            <p class="text-gray-600 text-sm">Find the best computers for gaming, work, and personal use.</p>
+                        </div>
+                    </div>
+
+                    <!-- Mobiles Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://images.unsplash.com/photo-1605234689046-33b0a9a83533?q=80&w=1887&auto=format&fit=crop" alt="A modern smartphone" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x300/D1D5DB/1F2937?text=Image+Error';">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold mb-2">Mobiles</h3>
+                            <p class="text-gray-600 text-sm">Latest smartphones from top brands at unbeatable prices.</p>
+                        </div>
+                    </div>
+
+                    <!-- Laptops Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1771&auto=format&fit=crop" alt="A sleek and powerful laptop" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x300/9CA3AF/111827?text=Image+Error';">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold mb-2">Laptops</h3>
+                            <p class="text-gray-600 text-sm">Powerful laptops for professionals, students, and gamers.</p>
+                        </div>
+                    </div>
+
+                    <!-- Accessories Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://images.unsplash.com/photo-1542487354-feaf3a8959e9?q=80&w=1770&auto=format&fit=crop" alt="Various computer accessories" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x300/6B7280/F9FAFB?text=Image+Error';">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold mb-2">Accessories</h3>
+                            <p class="text-gray-600 text-sm">Find the best accessories like pendrives, keyboards, and more.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="bg-gray-800 text-white text-center p-4 mt-auto">
+            <p>&copy; copyright E-Commerce</p>
+        </footer>
+    </div>
+
+</body>
+</html>
